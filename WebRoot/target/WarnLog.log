@@ -1,0 +1,342 @@
+2017-11-23 16:20:47  WARN 870ms|>- 
+### Error building SqlSession.
+### The error may exist in com/mod/mapper/OrdersMapper.xml
+### The error occurred while processing mapper_resultMap[subPage]
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: java.lang.IllegalStateException: Mapping is missing column attribute for property total
+ <com.util.DbConn.getFactory(DbConn.java:25)> 
+2017-11-23 16:22:31  WARN 370ms|>- 
+### Error building SqlSession.
+### The error may exist in com/mod/mapper/OrdersMapper.xml
+### The error occurred while processing mapper_resultMap[subPage]_collection[rows]
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'ResultMapWithBLOBs'.  Cause: java.lang.ClassNotFoundException: Cannot find class: ResultMapWithBLOBs
+ <com.util.DbConn.getFactory(DbConn.java:25)> 
+2017-11-23 16:24:14  WARN 501ms|>- 
+### Error building SqlSession.
+### The error may exist in com/mod/mapper/OrdersMapper.java (best guess)
+### The error occurred while processing mapper_resultMap[subPage]_collection[rows]
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.mod.mapper.OrdersMapper.getOrdersTable
+ <com.util.DbConn.getFactory(DbConn.java:25)> 
+2017-11-23 16:26:05  WARN 716ms|>- 
+### Error building SqlSession.
+### The error may exist in com/mod/mapper/OrdersMapper.java (best guess)
+### The error occurred while processing mapper_resultMap[subPage]_collection[rows]
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.mod.mapper.OrdersMapper.getOrdersTable
+ <com.util.DbConn.getFactory(DbConn.java:25)> 
+2017-11-23 16:27:01  WARN 385ms|>- 
+### Error building SqlSession.
+### The error may exist in com/mod/mapper/OrdersMapper.java (best guess)
+### The error occurred while processing mapper_resultMap[subPage]_collection[rows]
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.mod.mapper.OrdersMapper.getOrdersTable
+ <com.util.DbConn.getFactory(DbConn.java:25)> 
+2017-12-01 12:34:07  WARN 1945ms|>- 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'ADAasAD' for key 'uk_users_uname'
+### The error may involve com.mod.mapper.UsersMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into users      ( uname,                       upwd )       values ( ?,                       ? )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'ADAasAD' for key 'uk_users_uname'
+ <com.dao.UsersDao.insertSelective(UsersDao.java:124)> 
+2017-12-01 18:18:43  WARN 72468ms|>- 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'qwe' for key 'uk_users_uname'
+### The error may involve com.mod.mapper.UsersMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into users      ( uname,                       upwd,                       phone,                       city,                                            age,                       email,                       sex,                       avatar )       values ( ?,                       ?,                       ?,                       ?,                                            ?,                       ?,                       ?,                       ? )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'qwe' for key 'uk_users_uname'
+ <com.dao.UsersDao.insertSelective(UsersDao.java:124)> 
+2017-12-01 19:04:14  WARN 92789ms|>- 
+### Error updating database.  Cause: java.sql.SQLException: Incorrect decimal value: '' for column 'phone' at row 1
+### The error may involve com.mod.mapper.UsersMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into users      ( uname,                       upwd,                       phone,                       city,                                            age,                       email,                       sex,                       avatar )       values ( ?,                       ?,                       ?,                       ?,                                            ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Incorrect decimal value: '' for column 'phone' at row 1
+ <com.dao.UsersDao.insertSelective(UsersDao.java:124)> 
+2017-12-01 19:04:47  WARN 125885ms|>- 
+### Error updating database.  Cause: java.sql.SQLException: Incorrect decimal value: '' for column 'phone' at row 1
+### The error may involve com.mod.mapper.UsersMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into users      ( uname,                       upwd,                       phone,                       city,                                            age,                       email,                       sex,                       avatar )       values ( ?,                       ?,                       ?,                       ?,                                            ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Incorrect decimal value: '' for column 'phone' at row 1
+ <com.dao.UsersDao.insertSelective(UsersDao.java:124)> 
+2017-12-01 19:16:15  WARN 39481ms|>- 
+### Error updating database.  Cause: java.sql.SQLException: Incorrect decimal value: '' for column 'phone' at row 1
+### The error may involve com.mod.mapper.UsersMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into users      ( uname,                       upwd,                       phone,                       city,                                            age,                       email,                       sex,                       avatar )       values ( ?,                       ?,                       ?,                       ?,                                            ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Incorrect decimal value: '' for column 'phone' at row 1
+ <com.dao.UsersDao.insertSelective(UsersDao.java:124)> 
+2017-12-01 19:18:37  WARN 834ms|>- 
+### Error updating database.  Cause: java.sql.SQLException: Incorrect decimal value: '' for column 'phone' at row 1
+### The error may involve com.mod.mapper.UsersMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into users      ( uname,                       upwd,                       phone,                       city,                                            age,                       email,                       sex,                       avatar )       values ( ?,                       ?,                       ?,                       ?,                                            ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Incorrect decimal value: '' for column 'phone' at row 1
+ <com.dao.UsersDao.insertSelective(UsersDao.java:124)> 
+2017-12-01 19:19:30  WARN 53854ms|>- 
+### Error updating database.  Cause: java.sql.SQLException: Incorrect decimal value: '' for column 'phone' at row 1
+### The error may involve com.mod.mapper.UsersMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into users      ( uname,                       upwd,                       phone,                       city,                                            age,                       email,                       sex,                       avatar )       values ( ?,                       ?,                       ?,                       ?,                                            ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Incorrect decimal value: '' for column 'phone' at row 1
+ <com.dao.UsersDao.insertSelective(UsersDao.java:124)> 
+2017-12-01 19:28:38  WARN 754ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:68)> 
+2017-12-01 19:28:38  WARN 754ms|>- 
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:69)> 
+2017-12-01 19:31:07  WARN 1105ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:68)> 
+2017-12-01 19:31:07  WARN 1105ms|>- 
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:69)> 
+2017-12-01 19:33:48  WARN 28066ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:68)> 
+2017-12-01 19:33:48  WARN 28066ms|>- 
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:69)> 
+2017-12-01 19:34:45  WARN 85713ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:68)> 
+2017-12-01 19:34:45  WARN 85713ms|>- com.dao.AddressDao.insertSelective(com.mod.bean.Address)
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:69)> 
+2017-12-01 19:36:49  WARN 209424ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:68)> 
+2017-12-01 19:36:49  WARN 209425ms|>- 
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:69)> 
+2017-12-01 19:43:07  WARN 17395ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:68)> 
+2017-12-01 19:43:07  WARN 17395ms|>- 
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:69)> 
+2017-12-01 19:44:19  WARN 88984ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:68)> 
+2017-12-01 19:44:19  WARN 88985ms|>- 
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:69)> 
+2017-12-01 19:44:46  WARN 115960ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:68)> 
+2017-12-01 19:44:46  WARN 115960ms|>- 
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:69)> 
+2017-12-03 18:07:48  WARN 55983ms|>- 删除失败：--------------》
+ <com.servelet.DatagridDele.doGet(DatagridDele.java:64)> 
+2017-12-03 18:07:48  WARN 55984ms|>- com.dao.UsersDao.deleteByPrimaryKey(com.mod.bean.Users)
+ <com.servelet.DatagridDele.doGet(DatagridDele.java:65)> 
+2017-12-03 18:12:15  WARN 860ms|>- 删除失败：--------------》
+ <com.servelet.DatagridDele.doGet(DatagridDele.java:64)> 
+2017-12-03 18:12:15  WARN 861ms|>- com.dao.UsersDao.deleteByPrimaryKey(com.mod.bean.Users)
+ <com.servelet.DatagridDele.doGet(DatagridDele.java:65)> 
+2017-12-03 18:15:16  WARN 56832ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:68)> 
+2017-12-03 18:15:16  WARN 56832ms|>- com.dao.GoodsDao.insertSelective(com.mod.bean.Goods)
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:69)> 
+2017-12-03 18:15:31  WARN 71940ms|>- 删除失败：--------------》
+ <com.servelet.DatagridDele.doGet(DatagridDele.java:64)> 
+2017-12-03 18:15:31  WARN 71941ms|>- com.dao.GoodsDao.deleByObj(com.mod.bean.Goods)
+ <com.servelet.DatagridDele.doGet(DatagridDele.java:65)> 
+2017-12-03 18:59:11  WARN 1676012ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:68)> 
+2017-12-03 18:59:11  WARN 1676012ms|>- com.dao.AddressDao.insertSelective(com.mod.bean.Address)
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:69)> 
+2017-12-03 20:03:10  WARN 1179088ms|>- 更新失败：--------------》
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:70)> 
+2017-12-03 20:03:10  WARN 1179088ms|>- com.dao.UsersDao.updateByObj(com.mod.bean.Users)
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:71)> 
+2017-12-03 20:13:26  WARN 14427ms|>- 更新失败：--------------》
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:75)> 
+2017-12-03 20:13:26  WARN 14427ms|>- Cannot cast java.lang.String to com.mod.bean.Users
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:76)> 
+2017-12-03 20:44:28  WARN 13144ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:68)> 
+2017-12-03 20:44:28  WARN 13144ms|>- 
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:69)> 
+2017-12-03 20:44:42  WARN 26949ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:68)> 
+2017-12-03 20:44:42  WARN 26949ms|>- 
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:69)> 
+2017-12-03 20:45:45  WARN 90004ms|>- 更新失败：--------------》
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:79)> 
+2017-12-03 20:45:45  WARN 90004ms|>- 
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:80)> 
+2017-12-03 20:47:26  WARN 190906ms|>- 更新失败：--------------》
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:79)> 
+2017-12-03 20:47:26  WARN 190907ms|>- 
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:80)> 
+2017-12-03 20:52:00  WARN 680ms|>- 更新失败：--------------》
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:81)> 
+2017-12-03 20:52:00  WARN 680ms|>- 
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:82)> 
+2017-12-03 20:52:51  WARN 51030ms|>- 更新失败：--------------》
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:81)> 
+2017-12-03 20:52:51  WARN 51031ms|>- 
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:82)> 
+2017-12-03 20:54:11  WARN 495ms|>- 更新失败：--------------》
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:82)> 
+2017-12-03 20:54:11  WARN 495ms|>- 
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:83)> 
+2017-12-03 20:54:35  WARN 24745ms|>- 更新失败：--------------》
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:82)> 
+2017-12-03 20:54:35  WARN 24746ms|>- 
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:83)> 
+2017-12-03 21:06:01  WARN 154459ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:70)> 
+2017-12-03 21:06:01  WARN 154460ms|>- 
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:71)> 
+2017-12-03 21:06:43  WARN 195595ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:70)> 
+2017-12-03 21:06:43  WARN 195596ms|>- 
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:71)> 
+2017-12-03 21:31:29  WARN 942687ms|>- 删除失败：--------------》
+ <com.servelet.DatagridDele.doGet(DatagridDele.java:66)> 
+2017-12-03 21:31:29  WARN 942688ms|>- com.dao.AddressDao.deleByObj(com.mod.bean.Address)
+ <com.servelet.DatagridDele.doGet(DatagridDele.java:67)> 
+2017-12-03 22:05:33  WARN 32200ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:70)> 
+2017-12-03 22:05:33  WARN 32200ms|>- Cannot deserialize value of type `java.lang.Boolean` from String "1": only "true" or "false" recognized
+ at [Source: (String)"{
+  "flag" :  "address" ,
+  "isNewRecord" :  "true" ,
+  "adressId" :  "" ,
+  "uid" :  "1" ,
+  "address" :  "asdasd" ,
+  "def" :  "1" ,
+  "aphone" :  "12123213311" ,
+  "aname" :  "qwe" ,
+  "province" :  "" ,
+  "city" :  "" 
+}"; line: 7, column: 12] (through reference chain: com.mod.bean.Address["def"])
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:71)> 
+2017-12-03 22:12:11  WARN 430142ms|>- 更新失败：--------------》
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:82)> 
+2017-12-03 22:12:11  WARN 430143ms|>- com.dao.AddressDao.updateByObj(com.mod.bean.Address, com.mod.bean.Address)
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:83)> 
+2017-12-03 22:12:18  WARN 437062ms|>- 删除失败：--------------》
+ <com.servelet.DatagridDele.doGet(DatagridDele.java:66)> 
+2017-12-03 22:12:18  WARN 437063ms|>- object is not an instance of declaring class
+ <com.servelet.DatagridDele.doGet(DatagridDele.java:67)> 
+2017-12-03 22:33:44  WARN 473922ms|>- 更新失败：--------------》
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:82)> 
+2017-12-03 22:33:44  WARN 473922ms|>- com.dao.AddressDao.updateByObj(com.mod.bean.Address, com.mod.bean.Address)
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:83)> 
+2017-12-03 22:33:48  WARN 477506ms|>- 更新失败：--------------》
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:82)> 
+2017-12-03 22:33:48  WARN 477507ms|>- com.dao.AddressDao.updateByObj(com.mod.bean.Address, com.mod.bean.Address)
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:83)> 
+2017-12-04 09:50:48  WARN 8469ms|>- 更新失败：--------------》
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:82)> 
+2017-12-04 09:50:48  WARN 8471ms|>- object is not an instance of declaring class
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:83)> 
+2017-12-04 09:57:16  WARN 602ms|>- 更新失败：--------------》
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:82)> 
+2017-12-04 09:57:16  WARN 602ms|>- 
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:83)> 
+2017-12-04 09:59:04  WARN 108510ms|>- 删除失败：--------------》
+ <com.servelet.DatagridDele.doGet(DatagridDele.java:66)> 
+2017-12-04 09:59:04  WARN 108510ms|>- Unrecognized field "flag" (class com.mod.bean.Orders), not marked as ignorable (5 known properties: "uid", "state", "oid", "sum", "address"])
+ at [Source: (String)"{
+  "flag" :  "orders" ,
+  "oid" :  "20171126180345" ,
+  "uid" :  "1" ,
+  "state" :  "已付款" ,
+  "address" :  "西安市外包学院" ,
+  "sum" :  "1000.0" 
+}"; line: 2, column: 14] (through reference chain: com.mod.bean.Orders["flag"])
+ <com.servelet.DatagridDele.doGet(DatagridDele.java:67)> 
+2017-12-04 10:00:57  WARN 32094ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:70)> 
+2017-12-04 10:00:57  WARN 32094ms|>- 
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:71)> 
+2017-12-04 10:02:38  WARN 133158ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:70)> 
+2017-12-04 10:02:38  WARN 133159ms|>- 
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:71)> 
+2017-12-04 10:07:23  WARN 7376ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:70)> 
+2017-12-04 10:07:23  WARN 7376ms|>- 
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:71)> 
+2017-12-04 10:49:19  WARN 10717ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:70)> 
+2017-12-04 10:49:19  WARN 10717ms|>- 
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:71)> 
+2017-12-04 10:50:26  WARN 77504ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:70)> 
+2017-12-04 10:50:26  WARN 77504ms|>- 
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:71)> 
+2017-12-04 10:51:00  WARN 110923ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:70)> 
+2017-12-04 10:51:00  WARN 110924ms|>- 
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:71)> 
+2017-12-04 10:59:17  WARN 825ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:71)> 
+2017-12-04 10:59:17  WARN 825ms|>- 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '11' for key 'PRIMARY'
+### The error may involve com.mod.mapper.GoodsTypeMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into goodstype      ( tid,                       tname )       values ( ?,                       ? )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '11' for key 'PRIMARY'
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:84)> 
+2017-12-04 11:06:24  WARN 427321ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:71)> 
+2017-12-04 11:06:24  WARN 427321ms|>- 
+### Error updating database.  Cause: java.sql.SQLException: Field 'SubTotal' doesn't have a default value
+### The error may involve com.mod.mapper.OrderFormMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into orderform      ( oid,                       gid,                       gnum,                              descption,                       uid )       values ( ?,                       ?,                       ?,                              ?,                       ? )
+### Cause: java.sql.SQLException: Field 'SubTotal' doesn't have a default value
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:84)> 
+2017-12-04 11:06:51  WARN 454864ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:71)> 
+2017-12-04 11:06:51  WARN 454864ms|>- 
+### Error updating database.  Cause: java.sql.SQLException: Field 'SubTotal' doesn't have a default value
+### The error may involve com.mod.mapper.OrderFormMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into orderform      ( oid,                       gid,                       gnum,                              descption,                       uid )       values ( ?,                       ?,                       ?,                              ?,                       ? )
+### Cause: java.sql.SQLException: Field 'SubTotal' doesn't have a default value
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:84)> 
+2017-12-04 11:11:07  WARN 121007ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:71)> 
+2017-12-04 11:11:07  WARN 121007ms|>- 此类未设置insertSelective方法！
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:84)> 
+2017-12-04 11:11:25  WARN 139078ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:71)> 
+2017-12-04 11:11:25  WARN 139078ms|>- 
+### Error updating database.  Cause: java.sql.SQLException: Field 'addGoodsTime' doesn't have a default value
+### The error may involve com.mod.mapper.ShoppingCarMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into shoppingcar      ( cid,                              uid,                       gid,                       gnum,                       descption )       values ( ?,                              ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Field 'addGoodsTime' doesn't have a default value
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:84)> 
+2017-12-04 11:11:43  WARN 156848ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:71)> 
+2017-12-04 11:11:43  WARN 156848ms|>- 
+### Error updating database.  Cause: java.sql.SQLException: Field 'addGoodsTime' doesn't have a default value
+### The error may involve com.mod.mapper.ShoppingCarMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into shoppingcar      ( uid,                       gid,                       gnum,                       descption )       values ( ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Field 'addGoodsTime' doesn't have a default value
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:84)> 
+2017-12-04 11:13:08  WARN 28209ms|>- 添加失败：--------------》
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:71)> 
+2017-12-04 11:13:08  WARN 28219ms|>- Cannot deserialize value of type `java.sql.Timestamp` from String "2017-12-04": expected format "yyyy-MM-dd HH:mm:ss"
+ at [Source: (String)"{
+  "flag" :  "shoppingcar" ,
+  "isNewRecord" :  "true" ,
+  "cid" :  "" ,
+  "addGoodsTime" :  "2017-12-04" ,
+  "uid" :  "1" ,
+  "gid" :  "1" ,
+  "gnum" :  "1" ,
+  "descption" :  "asdasd" 
+}"; line: 5, column: 21] (through reference chain: com.mod.bean.ShoppingCar["addGoodsTime"])
+ <com.servelet.DatagridAdd.doGet(DatagridAdd.java:84)> 
+2017-12-04 11:21:04  WARN 34732ms|>- 更新失败：--------------》
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:82)> 
+2017-12-04 11:21:04  WARN 34733ms|>- 
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:83)> 
+2017-12-04 11:29:54  WARN 56731ms|>- 更新失败：--------------》
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:82)> 
+2017-12-04 11:29:54  WARN 56731ms|>- 
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:83)> 
+2017-12-04 11:29:54  WARN 56935ms|>- 更新失败：--------------》
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:82)> 
+2017-12-04 11:29:54  WARN 56935ms|>- 
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:83)> 
+2017-12-04 15:50:11  WARN 11708ms|>- 更新失败：--------------》
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:82)> 
+2017-12-04 15:50:11  WARN 11708ms|>- 
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:83)> 
+2017-12-04 15:59:36  WARN 576788ms|>- 更新失败：--------------》
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:82)> 
+2017-12-04 15:59:36  WARN 576788ms|>- 
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:83)> 
