@@ -1,4 +1,4 @@
 eclipse.preferences.version=1
-validator.Checked=WebRoot/index.jsp,WebRoot/main.jsp,WebRoot/jsp/dataTable.jsp
+validator.Checked=WebRoot/echarts-master,WebRoot/index.jsp,WebRoot/main.jsp,WebRoot/jsp/dataTable.jsp
 validator.Revalidate=true
 validator.Unchecked=
