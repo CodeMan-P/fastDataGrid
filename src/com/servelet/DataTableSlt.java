@@ -87,6 +87,7 @@ public class DataTableSlt extends HttpServlet {
 			
 		}
 		result.put("idField", idField);
+		System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(result));
 		json  = mapper.writeValueAsString(result);
 		//System.out.println(json);
 		request.setAttribute("jtype", json);

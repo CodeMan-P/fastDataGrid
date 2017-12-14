@@ -340,3 +340,41 @@
  <com.servelet.DataGridEdit.doGet(DataGridEdit.java:82)> 
 2017-12-04 15:59:36  WARN 576788ms|>- 
  <com.servelet.DataGridEdit.doGet(DataGridEdit.java:83)> 
+2017-12-05 15:08:20  WARN 1130ms|>- Type interface com.mod.mapper.RegionMapper is not known to the MapperRegistry.
+ <com.tests.UsersInit.<clinit>(UsersInit.java:27)> 
+2017-12-06 09:45:58  WARN 1157ms|>- 
+### Error building SqlSession.
+### The error may exist in com/mod/mapper/UsersMapper.xml
+### The error occurred while processing mapper_resultMap[AgeInfoMap]
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.mod.bean.Users.ageInfo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.mod.bean.Users.ageInfo
+ <com.util.DbConn.getFactory(DbConn.java:25)> 
+2017-12-06 09:45:58  WARN 1159ms|>- 
+ <com.dao.UsersDao.<clinit>(UsersDao.java:32)> 
+2017-12-07 15:21:23  WARN 1066ms|>- 
+### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+### The error may exist in com/mod/mapper/UsersMapper.xml
+### The error may involve com.mod.mapper.UsersMapper.getTable
+### The error occurred while executing a query
+### SQL: SELECT count(0) FROM goods
+### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+ <com.dao.TableDao.getTable(TableDao.java:62)> 
+2017-12-07 15:21:40  WARN 18911ms|>- 更新失败：--------------》
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:82)> 
+2017-12-07 15:21:40  WARN 18912ms|>- 
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:83)> 
+2017-12-07 15:28:52  WARN 450626ms|>- 更新失败：--------------》
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:82)> 
+2017-12-07 15:28:52  WARN 450627ms|>- 
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:83)> 
+2017-12-07 15:35:24  WARN 4202ms|>- 更新失败：--------------》
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:82)> 
+2017-12-07 15:35:24  WARN 4202ms|>- 
+ <com.servelet.DataGridEdit.doGet(DataGridEdit.java:83)> 
+2017-12-07 15:45:49  WARN 1296ms|>- 
+### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+### The error may exist in com/mod/mapper/UsersMapper.xml
+### The error may involve com.mod.mapper.UsersMapper.getTable
+### The error occurred while executing a query
+### SQL: SELECT count(0) FROM goods
+### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+ <com.dao.TableDao.getTable(TableDao.java:62)> 

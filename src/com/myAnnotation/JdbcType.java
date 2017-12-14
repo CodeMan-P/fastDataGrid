@@ -9,7 +9,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.RetentionPolicy;
 /**
- * 数据类型注解
+ * edatagrid数据类型注解
  *
  */
 @Target(ElementType.FIELD)

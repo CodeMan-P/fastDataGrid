@@ -24,7 +24,7 @@ import com.mod.mapper.OrdersMapper;
 import com.mod.mapper.ShoppingCarMapper;
 import com.util.DbConn;
 
-public class OrdersDao{
+public class OrdersDao {
 	private static OrdersMapper om;
 	private static OrderFormMapper ofm;
 	private static ShoppingCarMapper sc;
@@ -45,8 +45,7 @@ public class OrdersDao{
 		}
 	}
 
-	
-	public static LinkedList<Orders> getOrdersTable(){
+	public static LinkedList<Orders> getOrdersTable() {
 		LinkedList<Orders> list = null;
 		try {
 			list = om.getOrdersTable();
@@ -55,8 +54,7 @@ public class OrdersDao{
 		}
 		return list;
 	};
-	
-	
+
 	@Test
 	public void testMethod() {
 		// LinkedList<HashMap<String, Object>> list=null;
@@ -65,7 +63,7 @@ public class OrdersDao{
 
 		ObjectMapper mapper = new ObjectMapper();
 		LinkedList<LinkedHashMap<String, Object>> list = null;
-		//list = getOGViewGoupByOid(1);
+		// list = getOGViewGoupByOid(1);
 		try {
 			System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(list));
 		} catch (JsonProcessingException e) {
@@ -291,8 +289,6 @@ public class OrdersDao{
 	private static void orderLog(Orders orders, LinkedList<OrderForm> orderlist) {
 		ObjectMapper mapper = new ObjectMapper();
 		SerializerProvider sp = mapper.getSerializerProvider();
-		// sp.setAttribute(list2, te);
-
 		sp.setNullValueSerializer(new JsonSerializer<Object>() {
 			@Override
 			public void serialize(Object arg0, JsonGenerator arg1, SerializerProvider arg2)
@@ -311,31 +307,27 @@ public class OrdersDao{
 
 	}
 
-
 	public static Orders insertSelective(Orders t) throws Exception {
 		// TODO Auto-generated method stub
 		int i = 0;
 		i = om.insertSelective(t);
-		if(i==1){
+		if (i == 1) {
 			return t;
 		}
 		return null;
 	}
 
-
-	public static int updateByObj(Orders newT,Orders oldT) throws Exception {
+	public static int updateByObj(Orders newT, Orders oldT) throws Exception {
 		int i = 0;
 		i = om.updateByPrimaryKeyChangePk(newT, oldT);
 		return i;
 	}
 
-
 	public static int deleteByPrimaryKey(String id) throws Exception {
 		log.warn("此类未设置deleteByPrimaryKey方法！");
-		
-		throw new Exception("此类未设置deleteByPrimaryKey方法！"); 
-	}
 
+		throw new Exception("此类未设置deleteByPrimaryKey方法！");
+	}
 
 	public static int deleByObj(Orders t) throws Exception {
 		// TODO Auto-generated method stub

@@ -1,6 +1,12 @@
 .icon-blank{
 	background:url('icons/blank.gif') no-repeat center center;
 }
+.icon-chart{
+	background:url('icons/large_chart.png') no-repeat center center;
+}
+.icon-database{
+	background:url('icons/database29.png') no-repeat center center;
+}
 .icon-add{
 	background:url('icons/edit_add.png') no-repeat center center;
 }

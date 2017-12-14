@@ -72,5 +72,11 @@
 	>
 	<columnOverride column="uuid" javaType="java.lang.String" jdbcType="VARCHAR" />
 	</table>
+	<table tableName="region" domainObjectName="Region"
+	 enableCountByExample="false" enableSelectByExample="false"
+            enableUpdateByExample="false" enableDeleteByExample="false"
+	>
+	
+	</table>
   </context>
 </generatorConfiguration>

@@ -1,14 +1,19 @@
 package com.dao;
 
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedList;
 
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mod.bean.Address;
+import com.mod.bean.AgeInfo;
 import com.mod.bean.Users;
 import com.mod.mapper.AddressMapper;
 import com.mod.mapper.UsersMapper;
@@ -30,9 +35,21 @@ public class UsersDao {
 			log.warn(e.getLocalizedMessage());
 		}
 	}
+	
+	public static ArrayList<HashMap> getXingInfo(Integer sum){
+		ArrayList<HashMap> list = null;
+		list=um.getXingInfo(sum);
+		return list;
+	}
+	public static ArrayList<HashMap> getMingInfo(Integer sum){
+		ArrayList<HashMap> list = null;
+		list=um.getMingInfo(sum);
+		return list;
+	}
 	public static int deleteByPrimaryKey(String id){
 		int i = 0;
 		int pk=0;
+		
 		try {
 			pk = Integer.parseInt(id);
 			i = um.deleteByPrimaryKey(pk);
@@ -42,10 +59,26 @@ public class UsersDao {
 		}
 		return i;
 	}
+	public static ArrayList<HashMap> getRegDateInfo(String year){
+		ArrayList<HashMap> list = null;
+		list = um.getRegDateInfo(year);
+		return list;
+	}
+	public static ArrayList<AgeInfo> getAgeInfo(){
+		ArrayList<AgeInfo> list=null;
+		list = um.getAgeInfo();
+		return list;
+	}
 	@Test
 	public void testMethdo() {
 		ObjectMapper mapper = new ObjectMapper();
-		LinkedList<Address> list = getAdress(1);
+		 SimpleDateFormat myDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+
+		 	mapper.setDateFormat(myDateFormat);
+		 	ArrayList<HashMap> list = getMingInfo(200);
+		 	//ArrayList<HashMap> list = getRegDateInfo("2017");
+		//ArrayList<AgeInfo> list = getAgeInfo();
+		//LinkedList<Address> list = getAdress(1);
 		try {
 			System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(list));
 		} catch (JsonProcessingException e) {

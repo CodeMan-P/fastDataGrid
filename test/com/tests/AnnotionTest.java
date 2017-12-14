@@ -8,6 +8,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
 
 import org.junit.Test;
 
@@ -22,6 +25,28 @@ public class AnnotionTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+	}
+	@Test
+	public void testMe3(){
+		ObjectMapper mapper = new ObjectMapper();
+		LinkedList<HashMap<String, Object>> list = new LinkedList<HashMap<String, Object>>();
+		int id = 1131;
+		int text = 2017;
+		String iconCls="icon-chart_sub";
+		HashMap<String, Object> temp;
+		while(text>1999){
+			temp = new HashMap<String, Object>();
+			temp.put("id", id++);
+			temp.put("text", text--);
+			temp.put("iconCls", iconCls);
+			list.add(temp);
+		}
+		try {
+			System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(list));
+		} catch (JsonProcessingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	@Test
 	public void testMe2(){

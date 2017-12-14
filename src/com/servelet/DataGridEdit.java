@@ -53,6 +53,8 @@ public class DataGridEdit extends HttpServlet {
 			String oldRow = request.getParameter("oldRow").replaceAll("\\[|\\]", "");	
 			//System.out.println(oldRow);
 			this.editRow.put(flag,oldRow);
+			ObjectMapper mapper = new ObjectMapper();
+			System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(this.editRow));
 			//System.out.println(this.editRow.get(flag));
 			out.write("accepted!");
 			out.flush();

@@ -2,23 +2,19 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>无标题文档</title>
-<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
-<script type="text/javascript" src="js/jquery.form.js"></script>
-	<script type="text/javascript" src="js/echarts.js"></script>
-<script type="text/javascript" src="js/dark.js"></script>
-<script type="text/javascript" src="js/shine.js"></script>
-<script type="text/javascript" src="js/macarons.js"></script>
 
-<script type="text/javascript" src="js/dataTool.min.js"></script>
-<script type="text/javascript" src="js/china.js"></script>
-<script type="text/javascript" src="js/world.js"></script>
-<script type="text/javascript" src="js/api.js"></script>
-<script type="text/javascript" src="js/bmap.min.js"></script>
-<script type="text/javascript" src="js/ajaxfileupload.js"></script>
-<script>
-	$(document).ready(function(){
-		
+
+
+
+	</head>
+
+<body>
+	
+		<div id="main_e" style="width: auto;height: 600px">
+
+	</div>
+
+	<script>	
 var data = [
     {name: '海门', value: 9},
     {name: '鄂尔多斯', value: 12},
@@ -453,9 +449,7 @@ function renderItem(params, api) {
 option = {
     backgroundColor: '#404a59',
     title: {
-        text: '全国主要城市空气质量',
-        subtext: 'data from PM25.in',
-        sublink: 'http://www.pm25.in',
+        text: '会员注册地分布',
         left: 'center',
         textStyle: {
             color: '#fff'
@@ -470,16 +464,10 @@ option = {
                     restore: { //重置
                         show: true
                     },
-                   // dataZoom: { //数据缩放视图
-                    //    show: true
-                        
-                   // },
                     saveAsImage: {//保存图片
                         show: true
                     },
-                  //  magicType: {//动态类型切换
-                   //     type: ['bar', 'line']
-                   // } 
+                  
                 }
             },
     tooltip : {
@@ -699,19 +687,9 @@ option = {
         }
     ]
 };
-	var myChart = echarts.init(document.getElementById('main'), 'macarons');
+	var myChart = echarts.init(document.getElementById('main_e'));
 		myChart.setOption(option);
-	});
-	</script>
-	</head>
 
-<body>
-	
-		<div id="main" style="width: auto;height: 600px">
-	
-	
-	</div>
-	
-	
+	</script>
 </body>
 </html>
